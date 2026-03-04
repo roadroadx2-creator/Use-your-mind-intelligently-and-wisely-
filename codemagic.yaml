@@ -1,0 +1,10 @@
+workflows:
+  python-build:
+    name: Python EXE Build
+    environment:
+      python: 3.10
+    scripts:
+      - pip install pyinstaller
+      - pyinstaller --onefile game.py
+    artifacts:
+      - dist/*
