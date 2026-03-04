@@ -8,3 +8,5 @@ workflows:
       - pyinstaller --onefile game.py
     artifacts:
       - dist/*
+
+      
